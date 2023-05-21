@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Patrick+Hand&display=swap');
+
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family:'Gloria Hallelujah', cursive; ;
+}
+
+nav{
+display: flex;
+flex-direction: row;
+align-items: center;
+background-image: url(img/banner1.png);
+background-size: cover;
+height:300px;
+}
+
+h1{
+    color:white;
+    font-size: xx-large;
+    margin-left: 45px;   
+}
+h1:hover{color: #748eb1;
+    transform: translateX(20px);
+    filter: blur(1.7px);
+}
+
+.presentacion{
+    margin-top: 30px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap:20px;
+    flex-wrap: wrap;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+.img_cartoon{
+    box-shadow: 2px 3px 3px #2f2e2e;
+}
+
+
+.info a{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.info a:hover{
+    background: #748eb1;
+    box-shadow: 0 0 5px #748eb1, 0 0 25px #748eb1, 0 0 50px #748eb1,
+    0 0 200px #748eb1;
+    border-radius: 10px;
+    padding:3px 5px;
+    color:white;
+    font-weight: lighter;
+    border: none;   
+}
+.personaje{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.personaje img{
+    box-shadow: 2px 3px 3px #2f2e2e;;
+}
+.inicio_link{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 25px;
+    font-size: larger;
+}
+.inicio_link a{
+    text-decoration: none;
+}
+.inicio_link a:hover{
+    color:#748eb1;
+}
+
+footer{
+    margin-top: 15px;
+    height: 100px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h4:hover {
+    color: #748eb1;
+    transform: translateX(20px);
+    filter: blur(0.9px);
+}
