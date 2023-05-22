@@ -17,7 +17,7 @@ const charactersList = async (page = 1) => { // por defecto le pasamos el page 1
     <h2>${character.name}</h2>
     <p>${character.species}</p>
     <p>${character.status.toLowerCase()}</p>
-    <a href="/#/${character.id}">Cónoce más
+    <a href="./#/${character.id}">Cónoce más
     </a>
     </div>
     `;
@@ -30,5 +30,5 @@ const charactersList = async (page = 1) => { // por defecto le pasamos el page 1
         // Si el enlace lleva a /#/3, id toma el valor 3 que es el ID del personaje
         const id = location.hash.slice(1).toLocaleLowerCase().split('/')[1] || '/';
         localStorage.setItem('charID', id);
-        window.location.replace('/character.html');
+        window.location.replace('./character.html');
         });
